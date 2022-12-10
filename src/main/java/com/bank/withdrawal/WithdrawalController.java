@@ -31,7 +31,7 @@ public class WithdrawalController {
 		return service.findById(id);
 	}
 	
-	@PostMapping("/withdrawal")
+	@PostMapping()
 	public ResponseEntity<Map<String, Object>> guardar(@RequestBody Withdrawal withdrawal){
 		Map<String, Object> result = new HashMap<String, Object>();
 		result.put("Transacción", "Deposito");
